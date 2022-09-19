@@ -1,0 +1,46 @@
+body {
+  min-width: 360px;
+
+  // font-family: 'Cormorant Garamond', serif;
+
+  font-family: 'Poppins', sans-serif;
+
+  background-color: #f7f7f7;
+  color: #000000;
+}
+
+.container {
+  width: 360px;
+
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+}

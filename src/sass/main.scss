@@ -1,0 +1,9 @@
+/*
+ * Главный файл стилей.
+ * Все паршалы подключаются сюда.
+ */
+@import './base/common';
+@import './components/header';
+@import './components/hero';
+@import './components/signup-form';
+@import './components/footer';
