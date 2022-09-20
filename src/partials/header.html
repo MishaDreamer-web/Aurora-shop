@@ -7,9 +7,18 @@
             <use href="./images/symbol-defs.svg#icon-menu-burger"></use>
           </svg>
         </button>
-        <button type="button" class="header-search__button">
+        <button type="button" class="header-search__button" data-search-open>
           <svg width="18px" height="18px" class="icon-search">
             <use href="./images/symbol-defs.svg#icon-search"></use>
+          </svg>
+        </button>
+        <button
+          type="button"
+          class="header-search__button header-search__button--close search-close"
+          data-search-close
+        >
+          <svg width="16px" height="16px" class="icon-close">
+            <use href="./images/symbol-defs.svg#icon-close"></use>
           </svg>
         </button>
       </div>
@@ -29,5 +38,16 @@
         <div class="items-quantity">99</div>
       </div>
     </nav>
+    <form name="search-form" class="search-form search-close">
+      <input
+        type="text"
+        class="search-form__input"
+        placeholder="What are you looking for?"
+      />
+
+      <svg width="16.7px" height="16px" class="header-search__icon">
+        <use href="./images/symbol-defs.svg#icon-search"></use>
+      </svg>
+    </form>
   </div>
 </header>
