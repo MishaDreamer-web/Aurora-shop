@@ -11,7 +11,7 @@ function headerScroll() {
       header.classList.remove('header--fixed');
     }
   } else {
-    if (window.scrollY > fixedPosition) {
+    if (window.scrollY !== 0) {
       header.classList.add('header--fixed');
     } else {
       header.classList.remove('header--fixed');
