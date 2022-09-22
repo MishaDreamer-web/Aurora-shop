@@ -10,4 +10,27 @@
   background-repeat: no-repeat;
   background-position: 65%;
   background-size: cover;
+
+  @media screen and(min-width:768px) {
+    height: 657px;
+
+    padding-top: 320px;
+
+    text-align: center;
+  }
+
+  @media screen and(min-width:1253px) {
+    background-position: left top;
+  }
+}
+
+.hero__title {
+  @media screen and(min-width:768px) {
+    margin: 0;
+
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 1.5;
+    color: #ffffff;
+  }
 }

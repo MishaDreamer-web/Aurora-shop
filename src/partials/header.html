@@ -1,4 +1,8 @@
 <header class="header">
+  <div class="header-top__bar">
+    <span>We deliver Worldwide</span>
+  </div>
+
   <div class="container header__container">
     <nav class="header__nav">
       <div class="nav-buttons">
@@ -23,11 +27,32 @@
         </button>
       </div>
 
-      <a href=""
+      <a href="" class="header-logo"
         ><svg width="104px" height="20px" class="icon-site-logo">
           <use href="./images/symbol-defs.svg#icon-site-logo"></use>
         </svg>
       </a>
+
+      <form name="search-form" class="search-form search-form__desktop">
+        <input
+          type="text"
+          class="search-form__input search-form__input--desktop"
+          placeholder="What are you looking for?"
+        />
+
+        <svg width="16.7px" height="16px" class="header-search__icon">
+          <use href="./images/symbol-defs.svg#icon-search"></use>
+        </svg>
+      </form>
+
+      <div class="user-state">
+        <button type="button" class="user__button">Sign in</button>|<button
+          type="button"
+          class="user__button"
+        >
+          Register
+        </button>
+      </div>
 
       <div class="shopping-cart">
         <a href="" class="shopping-cart__link"
@@ -38,7 +63,7 @@
         <div class="items-quantity">99</div>
       </div>
     </nav>
-    <form name="search-form" class="search-form search-close">
+    <form name="search-form" class="search-form" data-search-form>
       <input
         type="text"
         class="search-form__input"
@@ -49,5 +74,17 @@
         <use href="./images/symbol-defs.svg#icon-search"></use>
       </svg>
     </form>
+
+    <div class="header-nav__desktop">
+      <ul class="list header-nav-desktop__list">
+        <li class="header-nav-desktop__link">what’s new</li>
+        <li class="header-nav-desktop__link">women</li>
+        <li class="header-nav-desktop__link">accessories</li>
+        <li class="header-nav-desktop__link">kids</li>
+        <li class="header-nav-desktop__link">beauty</li>
+        <li class="header-nav-desktop__link">outlet</li>
+        <li class="header-nav-desktop__link">stories</li>
+      </ul>
+    </div>
   </div>
 </header>

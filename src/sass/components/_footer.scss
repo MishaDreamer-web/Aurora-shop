@@ -3,6 +3,11 @@
   padding-bottom: 23px;
 
   background-color: #f7f7f7;
+
+  @media screen and(min-width:768px) {
+    padding-top: 26px;
+    padding-bottom: 14px;
+  }
 }
 
 .footer__container {
@@ -10,6 +15,11 @@
   padding-right: 16px;
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and(min-width:768px) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .footer__nav {
@@ -19,13 +29,17 @@
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 1.16px;
+
+  @media screen and(min-width:768px) {
+    width: 100%;
+    max-width: 891px;
+
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .nav__item {
-  height: 32px;
-
-  padding-left: 16px;
-  padding-right: 16px;
   padding-bottom: 13px;
 
   margin-bottom: 12px;
@@ -34,17 +48,7 @@
   flex-direction: column;
   overflow: hidden;
 
-  border-bottom: 1px solid #e1e0e1;
-
   transition: height 0.4s ease;
-
-  // &:hover {
-  //   height: 128px;
-  // }
-
-  // &:hover .nav__icon {
-  //   rotate: 90deg;
-  // }
 
   &.submenu--open {
     height: 128px;
@@ -57,6 +61,23 @@
       display: block;
     }
   }
+
+  @media screen and(max-width:767px) {
+    height: 32px;
+
+    padding-left: 16px;
+    padding-right: 16px;
+
+    border-bottom: 1px solid #e1e0e1;
+  }
+}
+
+.nav__item-social {
+  display: none;
+
+  @media screen and(min-width:768px) {
+    display: block;
+  }
 }
 
 .nav__menu-item {
@@ -66,17 +87,33 @@
   justify-content: space-between;
   align-items: center;
 
-  cursor: pointer;
+  @media screen and(max-width:768px) {
+    cursor: pointer;
+  }
+}
+
+.nav__menu-title {
+  @media screen and(min-width:768px) {
+    max-width: 146px;
+  }
 }
 
 .nav__icon {
   fill: #000000;
 
   transition: rotate 0.4s ease;
+
+  @media screen and(min-width:768px) {
+    display: none;
+  }
 }
 
 .submenu {
   display: none;
+
+  @media screen and(min-width:768px) {
+    display: block;
+  }
 }
 
 .submenu__item {
@@ -93,8 +130,13 @@
   color: #000000;
 }
 
+.footer__social {
+  @media screen and(min-width:768px) {
+    display: none;
+  }
+}
+
 .social__list {
-  width: 185px;
   height: 19px;
 
   margin-left: auto;
@@ -102,7 +144,15 @@
   margin-bottom: 16px;
 
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+}
+
+.social__item:not(:last-child) {
+  margin-right: 24px;
+
+  @media screen and(min-width:768px) {
+    margin-right: 16px;
+  }
 }
 
 .social__icon {
