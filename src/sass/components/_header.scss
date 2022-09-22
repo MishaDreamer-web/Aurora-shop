@@ -22,7 +22,6 @@
   }
 }
 
-
 .header__container {
   width: 100%;
 
@@ -40,6 +39,7 @@
     rgba(0, 0, 0, 0.0001) 95.04%
   );
   mix-blend-mode: normal;
+  
 
   transition: background-color 0.5s linear;
 
@@ -69,6 +69,8 @@
   &.header--fixed .header-nav-desktop__link {
     color: #000000;
   }
+
+  
 
   @media screen and(min-width:768px) {
     padding-top: 24px;
@@ -132,6 +134,7 @@
 }
 
 .icon-menu {
+ 
   fill: #ffffff;
 }
 
@@ -150,7 +153,10 @@
   filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.1));
 }
 
+
+
 .icon-search {
+  
   fill: #ffffff;
 }
 
@@ -232,6 +238,7 @@
   margin-right: auto;
 
   @media screen and(min-width:768px) {
+    
     height: 48px;
   }
 

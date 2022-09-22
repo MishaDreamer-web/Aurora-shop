@@ -9,3 +9,4 @@ function heroTitleShow() {
     heroTitle.classList.add('visually-hidden');
   }
 }
+heroTitleShow();

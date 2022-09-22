@@ -88,6 +88,7 @@
   align-items: center;
 
   @media screen and(max-width:768px) {
+    
     cursor: pointer;
   }
 }
@@ -137,6 +138,7 @@
 }
 
 .social__list {
+  
   height: 19px;
 
   margin-left: auto;
